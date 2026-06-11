@@ -15,7 +15,7 @@ spec:
     spec:
       containers:
         - name: my-app
-          image: localhost:5001/my-app:latest
+          image: kind-registry:5000/my-app:v1.0.2
           ports:
             - containerPort: 8080
           readinessProbe:
